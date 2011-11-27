@@ -1,0 +1,75 @@
+--- 
+layout: post
+title: Occlusion Culling
+published: true
+guid: 41
+---
+What is occlusion culling? Let's break it down.
+
+&gt;  Occlude: to stop, close up, or obstruct.
+&gt;
+&gt;  Cull: to select from a large quantity.
+
+
+Occlusion culling is a concept that is crucial to 3D graphics. It is the use of algorithms to select from a large selection of polygons what geometry should be occluded, obscured.
+
+Why?
+
+Let's take a look at a conventional 3D pipeline.
+
+&gt; 1. Application / Scene
+&gt;   1. Scene/Geometry database traversal
+&gt;   2. Movement of objects, and aiming and movement of view camera
+&gt;   3. Animated movement of object models
+&gt;   4. Description of the contents of the 3D world
+&gt;   5. <span style="color: white;">Object Visibility Check including possible Occlusion Culling</span>
+&gt;   6. Select Level of Detail (LOD)
+&gt; 2. Geometry
+&gt;   1. Transforms (rotation, translation, scaling)
+&gt;   2. Transform from Model Space to World Space (Direct3D)
+&gt;   3. Transform from World Space to View Space
+&gt;   4. View Projection
+&gt;   5. Trivial Accept/Reject Culling
+&gt;   6. Back-Face Culling (can also be done later in Screen Space)
+&gt;   7. Lighting
+&gt;   8. Perspective Divide - Transform to Clip Space
+&gt;   9. Clipping
+&gt;   10. Transform to Screen Space
+&gt; 3. Triangle Setup
+&gt;   1. Back-face Culling (or can be done in view space before lighting)
+&gt;   2. Slope/Delta Calculations
+&gt;   3. Scan-Line Conversion
+&gt; 4. Rendering / Rasterization
+&gt;   1. Shading
+&gt;   2. Texturing
+&gt;   3. Fog
+&gt;   4. Alpha Translucency Tests
+&gt;   5. Depth Buffering
+&gt;   6. Antialiasing (optional)
+&gt;   7. Display
+
+_Note: this is but one example of a conventional 3D pipeline. Pipelines can vary._
+
+As you can see, the conventional 3D pipeline contains a lot of science, math, logic, and engineering that we take for granted.  We're going to be dealing with but one area of this today, and that is the one that has been highlighted: "Object Visibility Check including possible Occlusion Culling".
+
+Let's say you have modeled a Dodge Viper in Maya, and it contains roughly one-hundred thousand polygons. You may be inclined to think that one-hundred thousand polygons isn't too difficult for a modern computer to render in real time, and in thinking so you would be right. However, what if you want ten of your Dodge Viper models onscreen at once? You are now sending one million polygons to your rendering pipeline.
+
+Without the aid of occlusion culling, your hardware would be rendering one million polygons. This can be a strain depending on the hardware you're dealing with. Either way, this is considerably more computationally intensive and time consuming than say rending three-hundred thousand polygons.
+
+Occlusion culling mitigates the overhead involved in rendering a scene such as this. While algorithms may vary, a simple solution can be imagined with the following pseudo-code:
+
+&gt; 1. Determine the camera's (user's) field of view.
+&gt; 2. From the camera, project a vector towards every point within the its field of view.
+&gt; 3. If that vector comes into contact with a polygon, mark that polygon as visible.
+&gt; 4. Render all visible polygons.
+
+Instead of rendering all polygons, whether visible or not, only visible polygons are rendered. This process adds an overhead of its own, however the performance gained offsets this overhead considerably.
+
+This technology is available to all sorts of mediums: film, video games, and research to name a few. Now the next time you are working with or enjoying something that involves 3D graphics, you can truly appreciate the science and hard work that have gone into such prolific technology.
+
+I shall leave you with this: Umbra Software's occlusion culling tech demo -- quite impressive.
+<p /><br />
+<div style="text-align: center;"><object height="344" width="425"><param name="movie" value="http://www.youtube.com/v/fU2L7IdYDVc&amp;hl=en&amp;fs=1" />
+<param name="allowFullScreen" value="true" />
+<param name="allowscriptaccess" value="always" />
+<embed allowfullscreen="true" src="http://www.youtube.com/v/fU2L7IdYDVc&amp;hl=en&amp;fs=1" allowscriptaccess="always" type="application/x-shockwave-flash" height="344" width="425"></embed></object></div>

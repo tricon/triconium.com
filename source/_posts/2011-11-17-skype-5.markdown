@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Skype 5"
+date: 2011-11-17 12:38
+comments: true
+categories:
+guid: 203
+---
+
+Every time Skype releases an update for the Mac, a glimmer of hope wells up in me. Could this be the version in which we finally get back the wonderful Skype 2.x OS X interface?
+
+Alas, disappointment dawns as not only are we greeted with the awful, I-would-fire-the-designers-in-a-heartbeat Skype 5 interface that, unfortunately, Windows users have had to endure for even longer than we Mac users, but the UI/UX has been made worse, cluttered with features that take away from the joy of making a simple, high-quality call over the Internet.
+
+"Man-in-the-middleware" at its finest.

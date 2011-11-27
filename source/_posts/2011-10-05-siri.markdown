@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Siri"
+date: 2011-10-05 20:44
+comments: true
+categories:
+guid: 201
+---
+Why the name "Siri"? It's the name of the company they bought. Here's what I dig about the name, "Siri", aside from the the voice technology, the icon is great: beautiful and reminiscent of Hal. Combined with the name, and the way it glows and levels as you speak, Siri feels like an actual entity.

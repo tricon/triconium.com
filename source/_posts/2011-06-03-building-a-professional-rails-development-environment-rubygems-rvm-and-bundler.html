@@ -1,0 +1,133 @@
+---
+layout: post
+title: "Building a Professional Rails Development Environment: Rubygems, RVM, and Bundler"
+published: true
+guid: 160
+---
+<p>Building a professional Rails development Environment is easy with some direction.</p>
+
+<p>We'll be covering:</p>
+
+<ol>
+<li>Rubygems</li>
+<li>RVM</li>
+<li>Bundler</li>
+</ol>
+
+
+<p>We'll be targeting the following platforms:</p>
+
+<ol>
+<li>Linux (Ubuntu specifically)</li>
+<li>OS X</li>
+</ol>
+
+
+<p>While it is completely possible to develop for Ruby on Rails on Windows, it is not always trivial to do so. Consider using the free <a href="http://www.virtualbox.org/">Virtualbox</a> to run Ubuntu in a virtual machine where Ruby and Rails development  has much better support.</p>
+
+<h1>Rubygems</h1>
+
+<p>Rubygems, now included with Ruby 1.9, is a way of packaging Ruby libraries and applications for distribution. Much like Apt or Yum in Linux, Rubygems allows you to easily download and install Ruby code for your current Ruby version.</p>
+
+<h3>Installing Rubygems for Ruby 1.8</h3>
+
+<p>Run:</p>
+
+{% gist 1178653 %}
+
+
+<h1>RVM</h1>
+
+<p>Ruby Version Manager is the premiere way to run several versions of Ruby on a system concurrently. While OS X and various flavors of Linux include a version of Ruby, you'll want to use RVM anyway.</p>
+
+<ol>
+<li><p>Simplicity. With a single command, you can download and install a Ruby from a wide selection of Rubies.</p></li>
+<li><p>Segmentation. While installing Ruby 1.9 alongside Ruby 1.8 is safe, you'll end up with two executables: ruby and ruby1.9. You'll have to explicitly specify ruby1.9 any time you wish to use it. In addition, installing gems becomes more cumbersome. You'll have to juggle gem paths as you switch between your two versions of Ruby. RVM resolves both of these issues by linking ruby and gem paths according to the chosen Ruby.</p></li>
+<li><p>Versions. While standard Ruby installers allow you to run Ruby 1.8, Ruby 1.9, and other exotic Rubies alongside each other, it becomes difficult to do so with minor versions of a given Ruby (e.g. Ruby 1.9.1, Ruby 1.9.2, etc.). RVM resolves and simplifies this. Rubinius, MacRuby, standard Ruby, and more, are all available for install and easy switching with paths set accordingly.</p></li>
+<li><p>Gemsets.  Installing gems systemwide can be dangerous. While Rubygems supports the installation of any number of versions of a given gem, applications that don't explicitly specify a version of a gem may break when a newer version of a gem is installed.Removing a version of a gem could cause an application to break as well. Gemsets protect against this by installing gems to a location only available to applications that have specified that given gemset. Typically you will want each application to have its own.</p></li>
+</ol>
+
+
+<p><strong>NOTE</strong>: Gems installed outside of a gemset will live in <em>ruby-version@global</em> (e.g. <em>ruby-1.9.2-p180@global</em>), accessible to any Ruby application utilizing the given Ruby version. A given gemset lives at <em>ruby-version@gemset</em> (e.g. <em>ruby-1.9.2-p180@fancy-forum</em>).</p>
+
+<h3>Installing RVM</h3>
+
+<p>To install RVM:</p>
+
+{% gist 1178655 %}
+
+
+<p>Reopen your shell to initialize RVM.</p>
+
+<p>Next, install a Ruby. To view a list of available Rubies:</p>
+
+{% gist 1178656 %}
+
+
+<p>Install a Ruby with:</p>
+
+{% gist 1178659 %}
+
+
+<p><strong>NOTE</strong>: You will need GCC installed.</p>
+
+<h4>Installing GCC</h4>
+
+<h6>Ubuntu</h6>
+
+{% gist 1178662 %}
+
+
+<h6>OS X</h6>
+
+<p>Download and install Xcode from <a href="http://developer.apple.com">http://developer.apple.com</a></p>
+
+<h3>Using RVM</h3>
+
+<p>Switch to the desired Ruby with:</p>
+
+{% gist 1178664 %}
+
+
+<p>You can specify a default Ruby to use with:</p>
+
+{% gist 1178669 %}
+
+
+<p>Quickly switch back the default Ruby:</p>
+
+{% gist 1178671 %}
+
+
+<h1>Bundler</h1>
+
+<p>Bundler simplifies the installation of gems for a given project. It will look for the specified gems in Gemfile, fetch them from the configured sources (<a href="http://rubygems.org">http://rubygems.org</a> is included by default), and install them.</p>
+
+<h3>Installing Bundler</h3>
+
+<p>Run:</p>
+
+{% gist 1178675 %}
+
+
+<h1>Tying It All Together</h1>
+
+<p>Let's see how all of these can work together with a Rails application.</p>
+
+<p>Open a new shell and run:</p>
+
+{% gist 1178684 %}
+
+
+
+<p>You are now ready to develop!</p>
+
+<p>The <em>echo</em> command above will create a .rvmrc which will be read by RVM whenever you enter the fancy-forum directory. In this case, it will automatically switch to ruby-1.9.2-p180 and use the fancy-forum gemset.</p>
+
+<p><em>bundle install</em> will install gems to the fancy-forum gemset where it'll be safe from other gems and versions. To add or remove gems for installation, simply edit or create the file <em>Gemfile</em> in the root of your project's directory.</p>
+
+<h1>Wrapping Up</h1>
+
+<p>Using this setup will give you the simplicity and flexibility a modern Rails developer needs. In the future we'll dive into more detail about these separate components.</p>
+
+<p>Questions? Suggestions? Comment below.</p>

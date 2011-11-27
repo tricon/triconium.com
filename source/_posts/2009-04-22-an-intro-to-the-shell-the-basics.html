@@ -1,0 +1,185 @@
+--- 
+layout: post
+title: "An Intro to the Shell: The Basics"
+published: true
+guid: 52
+---
+I am a diehard Linux and Mac enthusiast. One of the key reasons for this is the shell environment that both operating systems share. A powerful shell is key to any quality operating system and allows you to perform actions that can be considerably more power than a GUI.
+
+Recently, a friend of mine asked how he could get started in learning the shell. As the shell can initially appear a bit intimidating, I  decided to put together an introduction to the shell.
+
+<br />
+<strong>Getting Started</strong>
+
+Entering the shell from a desktop environment is as easy as opening Terminal in OS X (/Applications/Utilities) or opening GnomeTerminal or Konsole in Linux (sorry Windows users. Windows has a completely worthless shell. You do have an option, though: install Cygwin. Details in the foot notes).
+
+Upon opening your terminal application, you will be greeted with a command prompt.
+
+<blockquote class="posterous_short_quote">Wraith:~ tricon$</blockquote>
+
+Typically this prompt will consist of your computer name, current directory, user name, and end with a "$". This "$" shows that you are logged in as a user (more on this later). Note that in this case my current directory is displayed as <b>~</b>. <b>~</b> means "home directory" or "user directory", and is where files pertaining to your user account are located.
+
+<br />
+<b>ls</b>
+
+The first command to learn is one you will use frequently: <strong>ls</strong>. Type this now and hit return.
+
+<div class="CodeRay">
+  <div class="code"><pre>Wraith:~ tricon$  ls
+Complete                Documents                Library                        Pictures                StoryMill Backups        Zinio Library                organize
+Desktop                         Downloads                Movies                        Public                        Web Sync                autopar.rb                wo_conduit.sh
+Development                Icon?                        Music                        Sites                        WebServer                dwhelper
+Wraith:~ tricon$</pre></div>
+</div>
+
+
+<strong>ls</strong> is short for "list". This command lists all files in the current directory.
+
+Most commands have options. These options adjust the way a command operates or what it operates on.
+
+A useful option for the <strong>ls</strong> command is <strong>-a</strong>. Note that <strong>-</strong> typically denotes that you are issuing options to the command in order to differentiate from a parameter. These parameters can be additional input, a file, or another form of input that the command requires (more on parameters later).
+
+Before you re-run <strong>ls</strong> with the <strong>-a</strong> option, I'm going to teach you a very useful trick. Hit the <strong>up arrow</strong> on your keyboard. This will bring back the last command you typed. In fact, you can keep hitting the <strong>up arrow</strong> to cycle through your past commands. 
+
+Hit the up arrow and append <strong>-a</strong> to the <strong>ls</strong> command.
+
+<div class="CodeRay">
+  <div class="code"><pre>Wraith:~ tricon$ ls -a
+.                        .bash_history                .fonts.cache-1                .lesshst                .rnd                        .viminfo                Library
+..                        .bash_profile                .gconf                        .macports                .sabnzbd                .vimperatorrc                Movies
+.BridgeLabelsAndRatings        .bashrc                        .gconfd                        .mc                        .sh_history                .vimprojects                Music
+.CFUserTextEncoding        .bittorrent                .gem                        .mozilla                .smb                        .wapi                        Pictures
+.CurseClient                .config                        .gemrc                        .mplayer                .spumux                        .wine-243ASY                Public
+.DS_Store                .cpan                        .gitconfig                .mysql_history                .sqlite_history                .wine-rEp0fS                Sites
+.DownloadManager        .crash_report_checksum        .gitk                        .ncftp                        .ssh                        .zsh_history                StoryMill Backups
+.FontForge                .crash_report_frames        .gnome2                        .parallels_settings        .sshterm                .zshrc                        Web Sync
+.MacOSX                        .crash_report_preview        .gnome2_private                .profile                .subversion                Complete                WebServer
+.Trash                        .cups                        .gnucash                .psync.db                .svk                        Desktop                        Zinio Library
+.Xauthority                .dvdcss                        .gvimrc                        .qt                        .tweet                        Development                autopar.rb
+.Xcode                        .emacs                        .irb_history                .rails-plugin-sources        .twitter                Documents                dwhelper
+.adobe                        .emacs.d                .jedit                        .rdebug_hist                .vim                        Downloads                organize
+.banking                .fontconfig                .kismet                        .recently-used.xbel        .vimfuzzyfinder                Icon?                        wo_conduit.sh</pre></div>
+</div>
+
+
+<strong>ls -a</strong> lists all files in the current directory, including hidden ones. Files beginning with a period are considered hidden.
+
+Now type: <strong>ls -l</strong>
+
+<div class="CodeRay">
+  <div class="code"><pre>Wraith:~ tricon$ ls -l
+total 32
+rwxr-xr-x    4 tricon  admin   136 Apr 11 03:52 Complete
+drwx------    8 tricon  staff   272 Apr 23 06:30 Desktop
+drwxr-xr-x   13 tricon  staff   442 Apr 21 18:37 Development
+drwx------   88 tricon  staff  2992 Apr 18 14:18 Documents
+drwxr-xr-x@  75 tricon  staff  2550 Apr 23 05:29 Downloads
+-rw-r--r--@   1 tricon  staff     0 Nov  8 18:48 Icon?
+drwx------   65 tricon  staff  2210 Feb 10 20:13 Library
+drwx------    9 tricon  staff   306 Apr 23 06:18 Movies
+drwx---r-x   72 tricon  staff  2448 Apr 19 22:13 Music
+drwx------+ 130 tricon  staff  4420 Apr 23 05:20 Pictures
+drwxrwxrwx    8 tricon  staff   272 Feb 14 17:43 Public
+drwxr-xr-x    5 tricon  staff   170 Dec  2 22:52 Sites
+drwxr-xr-x    8 tricon  staff   272 Apr 19 21:30 StoryMill Backups
+drwxr-xr-x    6 tricon  staff   204 Mar  6 23:22 Web Sync
+lrwxr-xr-x    1 root    wheel    19 Feb 10 19:42 WebServer -&gt; /Library/WebServer/
+drwxr-xr-x    7 tricon  staff   238 Dec  9 17:13 Zinio Library
+-rwxr-xr-x@   1 tricon  staff   341 Jan 24 14:43 autopar.rb
+drwxr-xr-x@  37 tricon  staff  1258 Apr 23 06:42 dwhelper
+drwxr-xr-x    5 tricon  staff   170 Jan 17 16:38 organize
+-rwxr-xr-x@   1 tricon  staff   120 Mar 14 06:09 wo_conduit.sh</pre></div>
+</div>
+
+
+This lists files vertically, showing their attributes (more on this later).
+
+Now type: <strong>ls -al</strong>
+
+<div class="CodeRay">
+  <div class="code"><pre>Wraith:~ tricon$ ls -al
+total 43616
+drwxr-xr-x   98 tricon  staff      3332 Apr 22 22:26 .
+drwxr-xr-x    5 root    admin       170 Jan 23 10:16 ..
+-rw-rw----@   1 tricon  staff       173 Aug 26  2008 .BridgeLabelsAndRatings
+-rw-------    1 tricon  staff         3 Apr 12  2008 .CFUserTextEncoding
+drwxr-xr-x    6 tricon  staff       204 Nov 25 00:47 .CurseClient
+-rw-r--r--@   1 tricon  staff     21508 Apr 23 04:47 .DS_Store
+drwxr-xr-x    4 tricon  staff       136 Jul  3  2008 .DownloadManager
+drwx------    2 tricon  staff        68 Feb  1 18:32 .FontForge
+drwx------    3 tricon  staff       102 Apr 22 02:44 .MacOSX
+drwx------    2 tricon  staff        68 Apr 23 06:18 .Trash
+-rw-------    1 tricon  staff         0 Mar  8 19:10 .Xauthority
+drwxr-xr-x    2 tricon  staff        68 Jul  1  2008 .Xcode
+drwxr-x--x    3 tricon  staff       102 Apr 17  2008 .adobe
+drwx------    2 tricon  staff        68 Jun 23  2008 .banking
+-rw-------    1 tricon  staff     64347 Apr 22 23:31 .bash_history
+-rw-r--r--@   1 tricon  staff        17 Mar  4 16:54 .bash_profile
+-rw-r--r--    1 tricon  staff       314 Apr 16 17:27 .bashrc
+drwx------    3 tricon  staff       102 Sep 23  2008 .bittorrent
+drwxr-xr-x    4 tricon  staff       136 Jun 17  2008 .config
+drwxr-xr-x    5 root    staff       170 Jun  2  2008 .cpan
+-rw-r--r--    1 tricon  staff      5745 Nov 20 04:14 .crash_report_checksum
+-rw-r--r--    1 tricon  staff     11021 Nov 20 04:14 .crash_report_frames
+-rw-r--r--    1 tricon  staff     17927 Nov 20 04:14 .crash_report_preview
+drwx------    3 tricon  staff       102 Apr 13  2008 .cups
+...</pre></div>
+</div>
+
+
+Here we provided two options to <b>ls</b>: <b>-a</b> and <b>-l</b>. With most commands you can append them behind a single <b>-</b>.
+
+Notice that when using <b>-a</b> with the <b>ls</b> command there are two odd looking entries: <b>.</b> and <b>..</b><br />
+<b>.</b> refers to the current directory that you are in while <b>..</b> refers to the parent directory -- the one above the current directory. These are very useful and lead us into the next command.
+
+<br />
+<b>cd</b>
+
+<b>cd</b> stands for "change directory". This allows you to move between directories in the shell.
+
+Type: <b>cd ..</b>
+
+<div class="CodeRay">
+  <div class="code"><pre>Wraith:~ tricon$ cd ..
+Wraith:Users tricon$</pre></div>
+</div>
+
+
+<b>cd ..</b> means "change to directory .." Since <b>..</b> refers to the parent directory, you just went up a directory in the shell.
+<div class="CodeRay">
+  <div class="code"><pre>Wraith:Users tricon$ ls
+Shared        tricon</pre></div>
+</div>
+
+
+We are now in the directory for user accounts (/Users/ in OS X; /home/ in Linux). You should see your username in this listing. Here's a neat trick. Type: <b>cd</b> followed by a letter or two of your username and hit the <b>tab</b> key. Your username was just auto-completed.
+
+Auto-completion is a huge time saver. At any point while you are typing part of a path, you can hit <b>tab</b> to auto-complete the part of the path you are typing. But what happens when there are multiple possibilities? Hitting <strong>tab</strong> the first time will do nothing on the command line (thought it will typically make a beeping noise). Hitting <b>tab</b> again will list the possibilities. In order for <b>tab</b> to auto-complete, you need to type enough characters so that the possibilities are narrowed down to one, at which point hitting <b>tab</b> will auto-complete.
+
+You've just learned two very common and important commands. This next command is one of the most important as it will allow you to learn how to use virtually any command.
+
+<br />
+<b>man</b>
+
+<b>man</b> is short for "manual". This command will display the manual, or "man page", for virtually any command. Type: <b>man ls</b>.
+
+You will be shown a window with all of the details you could ever want to know about the <b>ls</b> command. Within this screen you can use the arrow keys to navigate. Hit <b>q</b> to "quit" and return back to the command prompt.
+
+<br />
+<b>Homework</b>
+
+For your homework, practice changing directories and listing their contents. For bonus points, practice using some of the available options listed in the man page for each command.
+
+<br />
+<b>Final Notes</b>
+
+You have begun your journey to learn one of the most powerful ways to interact with a computer: the command line. While these two commands may not seem like much, they are building blocks for a shell that features hundreds of commands. These copious commands allow you to do virtually anything, from mass renaming files to looking under the hood of your operating system, automating tasks, and beyond.
+
+In part two we'll cover more commands, show you how to manage files from the shell, and explain what attributes are and why they are important.
+
+<br />
+<strong>Cygwin</strong>
+
+For you Windows users out there, there is hope! Cygwin is a Linux shell environment for Windows. Upon installing this, you will be able to launch a program from your Start Menu that will provide you with a shell nearly identical to the ones available in OS X and Linux.
+
+Cygwin can be found here: <a href="http://www.cygwin.com/">http://www.cygwin.com/</a>
