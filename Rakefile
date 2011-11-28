@@ -4,10 +4,8 @@ require "stringex"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-ssh_user       = "user@domain.com"
-ssh_port       = "22"
-document_root  = "~/website.com/"
-rsync_delete   = false
+ssh_user       = "wraith"
+document_root  = "/var/www/triconium"
 deploy_default = "rsync"
 
 # This will be configured for you when you run config_deploy
@@ -99,6 +97,13 @@ task :new_post, :title do |t, args|
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
+  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.downcase.gsub(/&/,'and').gsub(/[,'":\?!\(\)\[\]]/,'').gsub(/[\W\.]/, '-').gsub(/-+$/,'')}.#{new_post_ext}"
+  guid = 1
+  open("GUID", "r+") do |file|
+    guid = (file.readline).to_i
+    file.pos = 0
+    file.puts "#{guid+=1}"
+  end
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
@@ -107,6 +112,7 @@ task :new_post, :title do |t, args|
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
     post.puts "comments: true"
     post.puts "categories: "
+    post.puts "guid: #{guid}"
     post.puts "---"
   end
 end
@@ -376,4 +382,21 @@ desc "list tasks"
 task :list do
   puts "Tasks: #{(Rake::Task.tasks - [Rake::Task[:list]]).join(', ')}"
   puts "(type rake -T for more detail)\n\n"
+end
+
+
+### Working with blog posts ###
+
+desc "Resize images to 777x"
+task :resize do |t|
+  images_path = "./source/images/posts"
+  images = Dir.glob("#{images_path}/*.{png,jpg,gif}")
+  images.delete_if { |i| i.match(/_preview/) }
+  images.each do |file|
+    preview_filename = "#{File.basename(file, File.extname(file))}_preview#{File.extname(file)}"
+    if !File.exist?("#{images_path}/#{preview_filename}")
+      puts "Converting #{file} to #{preview_filename}"
+      %x{convert "#{file}" -resize 777x "#{images_path}/#{preview_filename}"}
+    end
+  end
 end
