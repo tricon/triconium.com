@@ -1,2 +1,0 @@
-rvm ruby-1.9.3-falcon
-export PATH=./bin:$PATH
