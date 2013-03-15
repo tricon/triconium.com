@@ -1,0 +1,108 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RVM, Xrefresh, RubyCocoa, and OS X - Smiling is Sexy</title>
+	<meta name="author" content="David Aaron Fendley">
+
+	
+	<meta name="description" content="Having issues getting Xrefresh to work with RVM? I had problems as well. Fortunately, the following Gist resolved it (thanks, himmel): ~$ ARCHFLAGS &hellip;">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Smiling is Sexy" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+</head>
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">Smiling is Sexy</a></h1>
+<nav id="main-nav"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About Me</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About Me</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="http://google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:Tricon.github.com/triconium">
+			</form>
+		</div>
+	</div>
+</nav>
+<nav id="sub-nav" class="alignright">
+	<div class="social">
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/Tricon" title="Twitter">Twitter</a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+	<form class="search" action="http://google.com/search" method="get">
+		<input class="alignright" type="text" name="q" results="0">
+		<input type="hidden" name="q" value="site:Tricon.github.com/triconium">
+	</form>
+</nav>
+
+</header>
+	<div id="content" class="inner"><article class="post">
+	<h1 class="title">RVM, Xrefresh, RubyCocoa, and OS X</h1>
+	<div class="entry-content"><p>Having issues getting Xrefresh to work with RVM? I had problems as well. Fortunately, <a href="http://gist.github.com/289868">the following Gist</a> resolved it (thanks, <a href="http://github.com/himmel">himmel</a>):</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>~$ ARCHFLAGS='-arch i386 -arch x86_64'
+~$ rvm install 1.8.7 --debug --reconfigure -C --enable-shared=yes
+~$ wget http://sourceforge.net/projects/rubycocoa/files/RubyCocoa/1.0.0/RubyCocoa-1.0.0.tar.gz/download
+~$ tar xzf RubyCocoa-1.0.0.tar.gz &amp;&amp; rm RubyCocoa-1.0.0.tar.gz &amp;&amp; cd RubyCocoa-1.0.0
+~/RubyCocoa-1.0.0$ ruby install.rb config --build-universal=yes
+~/RubyCocoa-1.0.0$ ruby install.rb setup
+~/RubyCocoa-1.0.0$ sudo ruby install.rb install</pre></div>
+</div>
+</div>
+</article>
+</div>
+	<footer id="footer" class="inner">Copyright &copy; 2013
+
+    David Aaron Fendley
+
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+
+
+</body>
+</html>

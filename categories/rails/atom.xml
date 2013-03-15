@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Rails | Smiling is Sexy]]></title>
+  <link href="http://Tricon.github.com/triconium/categories/rails/atom.xml" rel="self"/>
+  <link href="http://Tricon.github.com/triconium/"/>
+  <updated>2013-03-15T03:48:59-05:00</updated>
+  <id>http://Tricon.github.com/triconium/</id>
+  <author>
+    <name><![CDATA[David Aaron Fendley]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Migrating Old Rails Migrations to Timestamp Format]]></title>
+    <link href="http://Tricon.github.com/triconium/2011/migrating-old-rails-migrations-to-timestamp-format/"/>
+    <updated>2011-08-24T15:30:00-05:00</updated>
+    <id>http://Tricon.github.com/triconium/2011/migrating-old-rails-migrations-to-timestamp-format</id>
+    <content type="html"><![CDATA[<p>Enter your RAILS_ROOT/db/migrate directory and run this:</p>
+
+<p><div><script src='https://gist.github.com/1178583.js?file='></script>
+<noscript><pre><code>for file in `ls [0-9][0-9][0-9]_*`; do mv $file $(echo $file | sed &quot;s/[0-9][0-9][0-9]/$(date -u +%Y%m%d%H%M%\S)/&quot;); sleep 1; done</code></pre></noscript></div>
+</p>
+
+<p>Wait one second per file. Enjoy!</p>
+]]></content>
+  </entry>
+  
+</feed>

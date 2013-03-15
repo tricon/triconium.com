@@ -1,0 +1,113 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RVM & (Mac)Vim - Smiling is Sexy</title>
+	<meta name="author" content="David Aaron Fendley">
+
+	
+	<meta name="description" content="If you&rsquo;re using (Mac)Vim with Ruby support and RVM, you may run into segfaults when RVM is set to one Ruby and Vim has been compiled against &hellip;">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Smiling is Sexy" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+</head>
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">Smiling is Sexy</a></h1>
+<nav id="main-nav"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About Me</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About Me</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="http://google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:Tricon.github.com/triconium">
+			</form>
+		</div>
+	</div>
+</nav>
+<nav id="sub-nav" class="alignright">
+	<div class="social">
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/Tricon" title="Twitter">Twitter</a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+	<form class="search" action="http://google.com/search" method="get">
+		<input class="alignright" type="text" name="q" results="0">
+		<input type="hidden" name="q" value="site:Tricon.github.com/triconium">
+	</form>
+</nav>
+
+</header>
+	<div id="content" class="inner"><article class="post">
+	<h1 class="title">RVM & (Mac)Vim</h1>
+	<div class="entry-content"><p>If you&rsquo;re using (Mac)Vim with Ruby support and RVM, you may run into segfaults when RVM is set to one Ruby and Vim has been compiled against another. You have a couple options:</p>
+
+<ol>
+<li>Compile Vim against your current RVM Ruby. Of course, if you remove this Ruby, you may have issues with Vim and plugins that rely on Ruby.</li>
+<li>Make sure your GEM_HOME and GEM_PATH are set to the system gem paths.</li>
+</ol>
+
+
+<p>This latter issue took a while to figure out as I have been spoiled by RVM taking care of paths for me. Some Vim plugins I had installed would require various gems, and my version of Vim was compiled against Ruby 1.8.7. When I launched Vim from a shell running 1.9.2, the plugins would find the 1.9.2 gems (if they existed) and segfault. When launching Vim from a shell running the system Ruby it was compiled against, everything worked as expected. By setting your GEM_HOME and GEM_PATH to your system gem paths, Vim will find the correct gems regardless of which version of Ruby the shell it is launched from is running.</p>
+
+<p>On OS X 10.5+, you can set these paths in your .bashrc (or .zshrc) like so:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>export GEM_HOME=/Library/Ruby/Gems/1.8
+export GEM_PATH=/Users/tricon/.gem/ruby/1.8:/Library/Ruby/Gems/1.8:/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8</pre></div>
+</div>
+</div>
+</article>
+</div>
+	<footer id="footer" class="inner">Copyright &copy; 2013
+
+    David Aaron Fendley
+
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+
+
+</body>
+</html>

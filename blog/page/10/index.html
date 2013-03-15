@@ -1,0 +1,427 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Smiling is Sexy</title>
+	<meta name="author" content="David Aaron Fendley">
+
+	
+	<meta name="description" content="Having issues getting Xrefresh to work with RVM? I had problems as well. Fortunately, the following Gist resolved it (thanks, himmel): ~$ ARCHFLAGS &hellip;">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Smiling is Sexy" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+</head>
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">Smiling is Sexy</a></h1>
+<nav id="main-nav"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About Me</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About Me</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="http://google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:Tricon.github.com/triconium">
+			</form>
+		</div>
+	</div>
+</nav>
+<nav id="sub-nav" class="alignright">
+	<div class="social">
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/Tricon" title="Twitter">Twitter</a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+	<form class="search" action="http://google.com/search" method="get">
+		<input class="alignright" type="text" name="q" results="0">
+		<input type="hidden" name="q" value="site:Tricon.github.com/triconium">
+	</form>
+</nav>
+
+</header>
+	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h1 class="title"><a href="/2010/rvm-xrefresh-rubycocoa-and-os-x/">RVM, Xrefresh, RubyCocoa, and OS X</a></h1>
+  <div class="meta">
+  	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-10-29T00:00:00-05:00" pubdate data-updated="true">Oct 29<span>th</span>, 2010</time></div>
+  	
+  </div>
+	<div class="entry-content">
+		<p>Having issues getting Xrefresh to work with RVM? I had problems as well. Fortunately, <a href="http://gist.github.com/289868">the following Gist</a> resolved it (thanks, <a href="http://github.com/himmel">himmel</a>):</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>~$ ARCHFLAGS='-arch i386 -arch x86_64'
+~$ rvm install 1.8.7 --debug --reconfigure -C --enable-shared=yes
+~$ wget http://sourceforge.net/projects/rubycocoa/files/RubyCocoa/1.0.0/RubyCocoa-1.0.0.tar.gz/download
+~$ tar xzf RubyCocoa-1.0.0.tar.gz &amp;&amp; rm RubyCocoa-1.0.0.tar.gz &amp;&amp; cd RubyCocoa-1.0.0
+~/RubyCocoa-1.0.0$ ruby install.rb config --build-universal=yes
+~/RubyCocoa-1.0.0$ ruby install.rb setup
+~/RubyCocoa-1.0.0$ sudo ruby install.rb install</pre></div>
+</div>
+
+		
+		
+	</div>
+</article>
+
+
+    <article class="post">
+	<h1 class="title"><a href="/2010/overcoming-fear/">Overcoming Fear</a></h1>
+  <div class="meta">
+  	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-23T00:00:00-05:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2010</time></div>
+  	
+  </div>
+	<div class="entry-content">
+		<p>From <a href="http://feedproxy.google.com/~r/ThinkSimple/~3/XpM8skdMNDk/">Overcoming Fear</a>:</p>
+
+<blockquote class="posterous_medium_quote"><p>The caveat is that sometimes when we change, it will make some people around us uncomfortable. When I decided to change, I had lost many friends. Some of my relatives disowned me and others stopped talking to me.</p>
+
+<p>The loss of friends and relatives was very painful but the rewards were truly worthwhile. I made new friends who ended up becoming more like family than friends. I went from being a miserable person to being a happy person. The void disappeared. My life went from being meaningless to meaningful. It was the wisest decision I ever made in my life.</p></blockquote>
+
+		
+		
+	</div>
+</article>
+
+
+    <article class="post">
+	<h1 class="title"><a href="/2010/rate-current-song-in-itunes-keyboard-shortcuts/">Rate Current Song in iTunes Keyboard Shortcuts</a></h1>
+  <div class="meta">
+  	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-20T00:00:00-05:00" pubdate data-updated="true">Sep 20<span>th</span>, 2010</time></div>
+  	
+  </div>
+	<div class="entry-content">
+		<p>Attached are some Automator actions I made a while back to rate the current song playing in iTunes. Using the <em>Keyboard Preference Pane</em>, you can set these so that they&#8217;re available no matter which application has focus.</p>
+<p>[[posterous-content:lbatwswAyADkgqDAmuft]]</p>
+<p>&nbsp;</p>
+<p>To install, move the .workflow files to <em>Library/Services</em> in your home directory.</p>
+<p>[[posterous-content:dkgcAcrHvBDGxnehwjjd]]</p>
+<p>&nbsp;</p>
+<p><a href="http://files.me.com/tricon/byepaf">Download Rate Current Song in iTunes</a></p>
+
+		
+		
+	</div>
+</article>
+
+
+    <article class="post">
+	<h1 class="title"><a href="/2010/i-love-guillermo-del-toro/">I Love Guillermo Del Toro</a></h1>
+  <div class="meta">
+  	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-17T00:00:00-05:00" pubdate data-updated="true">Sep 17<span>th</span>, 2010</time></div>
+  	
+  </div>
+	<div class="entry-content">
+		<p>Guillermo Del Toro on <em>At the Mountains of Madness</em>:</p>
+
+<blockquote class="posterous_medium_quote"><p>&ldquo;We are budgeting the creatures and met with Spectral Motion and ILM, where Dennis Muren told me the sweetest words ever when he said, no one has ever seen monsters like this. That was truly one of the highlights of my fat life, a demigod like Muren saying that.&rdquo; ~ Guillermo Del Toro</p></blockquote>
+
+<p>&ldquo;One of the highlights of my fat life&hellip;&rdquo; Love it!</p>
+
+		
+		
+	</div>
+</article>
+
+
+    <article class="post">
+	<h1 class="title"><a href="/2010/god-save-the-princess/">God Save the Princess</a></h1>
+  <div class="meta">
+  	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-17T00:00:00-05:00" pubdate data-updated="true">Sep 17<span>th</span>, 2010</time></div>
+  	
+  </div>
+	<div class="entry-content">
+		<div class="posterous_bookmarklet_entry">
+
+      [[posterous-content:AdqIcidmmafmfasyadhv]]
+
+<div class="posterous_quote_citation">via <a href="http://www.thisiskuwahara.com/post/581636058">thisiskuwahara.com</a>
+</div>
+    <p></p>
+</div>
+
+		
+		
+	</div>
+</article>
+
+
+    <article class="post">
+	<h1 class="title"><a href="/2010/mac-app-paparazzi/">Mac App: Paparazzi</a></h1>
+  <div class="meta">
+  	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-16T00:00:00-05:00" pubdate data-updated="true">Sep 16<span>th</span>, 2010</time></div>
+  	
+  </div>
+	<div class="entry-content">
+		<p>Need to take a full screenshot of a site, perhaps for your portfolio? Forget those browser plugins. <a href="http://derailer.org/paparazzi/">Paparazzi</a> is where it&rsquo;s at. Paparazzi will take a full shot of the site from top to bottom in the resolution of your choosing. It&rsquo;s simple, easy, and reliable &mdash; enough said.
+[[posterous-content:YrXL23A68fPr4DMZrMXd]]
+<a href="http://derailer.org/paparazzi/">Paparazzi</a> for Mac</p>
+
+		
+		
+	</div>
+</article>
+
+
+    <article class="post">
+	<h1 class="title"><a href="/2010/itunes-10-replacement-icons/">iTunes 10 Replacement Icons</a></h1>
+  <div class="meta">
+  	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-13T00:00:00-05:00" pubdate data-updated="true">Sep 13<span>th</span>, 2010</time></div>
+  	
+  </div>
+	<div class="entry-content">
+		<p>A handful of notable iTunes 10 replacement icons:</p>
+<p>&nbsp;</p>
+<p>[[posterous-content:FJCwzxdbcADFGfwHzfbn]]</p>
+<p><a href="http://-kol.deviantart.com/art/iTunes-X-Icon-Replacement-177808128">-kol</a></p>
+<p>[[posterous-content:lJtntblJpAfJswsHAdog]]</p>
+<p><a href="http://pixelresort.com/goodies/">Pixel Resort</a></p>
+<p>[[posterous-content:BcdDobJuqHItpbFGlcki]]</p>
+<p><a href="http://iconblock.com/goodies/icons/">Icon Block</a></p>
+<p>[[posterous-content:rbAamsIDhxGeetJDCfro]]</p>
+<p><a href="http://www.toffeenutdesign.com/goodies#itunesten">Toffee Nut Design</a></p>
+<p>[[posterous-content:kcqfisblApudpykfeFHi]]</p>
+<p><a href="http://danwiersema.com/blog/2010/09/05/itunes-10-replacement-icons/">Dan Wiersema</a></p>
+<p>[[posterous-content:zGmnpBjyrGfgqjItgeEk]]</p>
+<p><a href="http://www.a2591.com/2010/09/alternate-itunes-10-icon-for-mac-users.html">A2591</a></p>
+<p><a href="http://danwiersema.com/blog/2010/09/05/itunes-10-replacement-icons/"><br /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+		
+		
+	</div>
+</article>
+
+
+    <article class="post">
+	<h1 class="title"><a href="/2010/reinvention-lesson-one/">Reinvention: Lesson One</a></h1>
+  <div class="meta">
+  	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-31T00:00:00-05:00" pubdate data-updated="true">Aug 31<span>st</span>, 2010</time></div>
+  	
+  </div>
+	<div class="entry-content">
+		<p>What does it take to reinvent oneself? <p /> Take a look at who you were five years ago. Take a look at yourself today. See a difference? I certainly hope so. <strong>Reflection is an important part of reinvention and personal evolution.</strong> <p /> Now, close your eyes and imagine the person you&#8217;d like to be. This is likely a mashup of changes inspired by your experiences seasoned with concepts borrowed from heroes and idols. This is your future projection of yourself. <p /> Reflecting on the past you and current you, are you closer to your future self? How do you begin this change, or how do you continue it more efficiently? <p /> <strong>JOURNAL</strong> <p /> Wether you prefer writing or speaking, record your thoughts frequently. Start by journaling a few times a week. Work on increasing the frequency to daily. Why? Journaling gives you a change to think about your choices throughout the day more analytically. It helps you see and make sense of things. It allows you to track your progress, to see where you have failed and where you have succeeded. By journaling, you train yourself to be more self-observant. <strong>This enhances your ability to analyze situations so that you can begin to apply this skill to real-time self observation.</strong></p>
+<hr />
+<p>Homework: Your homework for the next three weeks is to journal at least three times a week. Think about your day, what happened, how you responded, how you could have responded more appropriately. Ask yourself tough, detailed questions.<strong> Admit to failures. Appreciate your successes</strong>.&nbsp;</p>
+<hr />
+<p>Final Notes: <strong>Our future selves are who we are meant to be.</strong> It is important that your future self be not a mirror of a hero or an idol but a better version of yourself enhanced with the best attributes of what your heroes and idols have to offer. Long-term change requires constant reflection and persistence. Who you are is determined by the choices you make. Observe yourself so that you may make the right choices. <strong>Be not a product of your environment but a crafting of your own design.</strong></p>
+<p>&nbsp;</p>
+
+		
+		
+	</div>
+</article>
+
+
+    <article class="post">
+	<h1 class="title"><a href="/2010/new-user-icon-goomba-/">New User Icon: Goomba!</a></h1>
+  <div class="meta">
+  	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-04T00:00:00-05:00" pubdate data-updated="true">Jul 4<span>th</span>, 2010</time></div>
+  	
+  </div>
+	<div class="entry-content">
+		[[posterous-content:LX165LlHaPpizqTgjhMg]]<p>Don&#8217;t stomp on Goomba!</p>
+
+		
+		
+	</div>
+</article>
+
+
+    <article class="post">
+	<h1 class="title"><a href="/2010/my-mx-revolution-setup/">My MX Revolution Setup</a></h1>
+  <div class="meta">
+  	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-04T00:00:00-05:00" pubdate data-updated="true">Jul 4<span>th</span>, 2010</time></div>
+  	
+  </div>
+	<div class="entry-content">
+		[[posterous-content:dvSCdQoK9tDdl2hUlAKQ]]<p>I adore my MX Revolution. Here&#8217;s how I have my buttons mapped in order to remain fluid and productive.</p>
+
+		
+		
+	</div>
+</article>
+
+<nav id="pagenavi">
+    
+        <a href="/blog/page/9/" class="prev">Prev</a>
+    
+    
+        <a href="/blog/page/11/" class="next">Next</a>
+    
+    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
+</nav></div>
+	<footer id="footer" class="inner">Copyright &copy; 2013
+
+    David Aaron Fendley
+
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+
+
+</body>
+</html>

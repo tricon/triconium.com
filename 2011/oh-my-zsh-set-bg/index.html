@@ -1,0 +1,188 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>oh-my-zsh & set-bg - Smiling is Sexy</title>
+	<meta name="author" content="David Aaron Fendley">
+
+	
+	<meta name="description" content="I&#8217;ve been using oh-my-zsh for a while and figured I&#8217;d finally write about it. Simply put, oh-my-zsh is an open source repository of handy &hellip;">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Smiling is Sexy" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+</head>
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">Smiling is Sexy</a></h1>
+<nav id="main-nav"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About Me</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About Me</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="http://google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:Tricon.github.com/triconium">
+			</form>
+		</div>
+	</div>
+</nav>
+<nav id="sub-nav" class="alignright">
+	<div class="social">
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/Tricon" title="Twitter">Twitter</a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+	<form class="search" action="http://google.com/search" method="get">
+		<input class="alignright" type="text" name="q" results="0">
+		<input type="hidden" name="q" value="site:Tricon.github.com/triconium">
+	</form>
+</nav>
+
+</header>
+	<div id="content" class="inner"><article class="post">
+	<h1 class="title">Oh-my-zsh & Set-bg</h1>
+	<div class="entry-content"><p>I&#8217;ve been using oh-my-zsh for a while and figured I&#8217;d finally write about it. Simply put, oh-my-zsh is an open source repository of handy Zsh defaults and configurations.</p>
+
+
+
+
+<p>Why Zsh instead of Bash? It has really great autocompletion. Install oh-my-zsh with:</p>
+
+
+
+
+<div><script src='https://gist.github.com/1178641.js?file='></script>
+<noscript><pre><code>wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh</code></pre></noscript></div>
+
+
+
+
+<p>Your shell will be set to use Zsh.</p>
+
+
+
+
+<p>Edit <code>~/.zshrc</code> to set the theme and enable various plugins:</p>
+
+
+
+
+<div><script src='https://gist.github.com/1178643.js?file='></script>
+<noscript><pre><code>ZSH=$HOME/.dotfiles/oh-my-zsh # I'm not using the standard installation directory for oh-my-zsh. Don't copy this line if you are!
+DISABLE_AUTO_UPDATE=&quot;true&quot;
+ZSH_THEME=&quot;apple&quot;
+plugins=(git osx rails3 ruby rvm textmate yard)
+source $ZSH/oh-my-zsh.sh
+source $HOME/.dotfiles/bash/aliases
+# RVM!
+[[ -s &quot;$HOME/.rvm/scripts/rvm&quot; ]] &amp;&amp; . &quot;$HOME/.rvm/scripts/rvm&quot;
+# Load paths.
+PATH=$PATH:/usr/local/mysql/bin/
+export DYLD_LIBRARY_PATH=&quot;$DYLD_LIBRARY_PATH:/usr/local/mysql/lib/&quot;</code></pre></noscript></div>
+
+
+
+
+<p>Note that the Apple theme is not yet available in the official oh-my-zsh repository. I&#8217;ve submitted it for inclusion. In the mean time, you can use it by running this in your shell (just copy/paste):</p>
+
+
+
+
+<div><script src='https://gist.github.com/1178647.js?file='></script>
+<noscript><pre><code>echo &quot;function toon {
+ echo -n \&quot;\&quot;
+}
+
+PROMPT='%{$fg[magenta]%}$(toon)%{$reset_color%} %~/ %{$reset_color%}'&quot; &gt;&gt; ~/.oh-my-zsh/themes/apple.zsh-theme
+</code></pre></noscript></div>
+
+
+
+
+<p>A screenshot:</p>
+
+
+<p><a href="/images/posts/Purple_Apple_ZSH_theme_screen_shot.png"><img src="/images/posts/Purple_Apple_ZSH_theme_screen_shot_preview.png" alt="Screenshot" /></a></p>
+
+<p>This theme does not include the hostname and Apple logo in the bottom right. This is set-bg, a separate script suite I wrote that only works with iTerm2 on OS X. If you&#8217;d like to install this, run:</p>
+
+
+
+
+<div><script src='https://gist.github.com/1178649.js?file='></script>
+<noscript><pre><code>wget --no-check-certificate https://github.com/tricon/set-bg/raw/master/install.sh -O - | sh</code></pre></noscript></div>
+
+
+
+
+<p>This copies the necessary files and aliases ssh to sshb, so when you ssh to another server, your hostname in the bottom right will change.</p>
+
+
+
+
+<p><strong>This requires ImageMagick</strong>. See the repository link below for instructions on how to install this.</p>
+
+
+
+
+<p>You can watch the repository here: <a href="https://github.com/Tricon/set-bg">https://github.com/Tricon/set-bg</a></p>
+
+
+
+
+<p><em>Be sure to launch a new shell session after installing oh-my-zsh and set-bg to see the changes</em>.</p>
+
+</div>
+</article>
+</div>
+	<footer id="footer" class="inner">Copyright &copy; 2013
+
+    David Aaron Fendley
+
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+
+
+</body>
+</html>
