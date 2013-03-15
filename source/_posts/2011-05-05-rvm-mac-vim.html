@@ -1,0 +1,22 @@
+--- 
+layout: post
+title: RVM & (Mac)Vim
+published: true
+guid: 155
+---
+<p>If you&rsquo;re using (Mac)Vim with Ruby support and RVM, you may run into segfaults when RVM is set to one Ruby and Vim has been compiled against another. You have a couple options:</p>
+
+<ol>
+<li>Compile Vim against your current RVM Ruby. Of course, if you remove this Ruby, you may have issues with Vim and plugins that rely on Ruby.</li>
+<li>Make sure your GEM_HOME and GEM_PATH are set to the system gem paths.</li>
+</ol>
+
+
+<p>This latter issue took a while to figure out as I have been spoiled by RVM taking care of paths for me. Some Vim plugins I had installed would require various gems, and my version of Vim was compiled against Ruby 1.8.7. When I launched Vim from a shell running 1.9.2, the plugins would find the 1.9.2 gems (if they existed) and segfault. When launching Vim from a shell running the system Ruby it was compiled against, everything worked as expected. By setting your GEM_HOME and GEM_PATH to your system gem paths, Vim will find the correct gems regardless of which version of Ruby the shell it is launched from is running.</p>
+
+<p>On OS X 10.5+, you can set these paths in your .bashrc (or .zshrc) like so:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>export GEM_HOME=/Library/Ruby/Gems/1.8
+export GEM_PATH=/Users/tricon/.gem/ruby/1.8:/Library/Ruby/Gems/1.8:/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8</pre></div>
+</div>

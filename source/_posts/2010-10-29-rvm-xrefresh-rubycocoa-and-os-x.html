@@ -1,0 +1,17 @@
+--- 
+layout: post
+title: RVM, Xrefresh, RubyCocoa, and OS X
+published: true
+guid: 120
+---
+<p>Having issues getting Xrefresh to work with RVM? I had problems as well. Fortunately, <a href="http://gist.github.com/289868">the following Gist</a> resolved it (thanks, <a href="http://github.com/himmel">himmel</a>):</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>~$ ARCHFLAGS='-arch i386 -arch x86_64'
+~$ rvm install 1.8.7 --debug --reconfigure -C --enable-shared=yes
+~$ wget http://sourceforge.net/projects/rubycocoa/files/RubyCocoa/1.0.0/RubyCocoa-1.0.0.tar.gz/download
+~$ tar xzf RubyCocoa-1.0.0.tar.gz &amp;&amp; rm RubyCocoa-1.0.0.tar.gz &amp;&amp; cd RubyCocoa-1.0.0
+~/RubyCocoa-1.0.0$ ruby install.rb config --build-universal=yes
+~/RubyCocoa-1.0.0$ ruby install.rb setup
+~/RubyCocoa-1.0.0$ sudo ruby install.rb install</pre></div>
+</div>

@@ -1,0 +1,21 @@
+--- 
+layout: post
+title: Windows 7 & Boot Camp
+published: true
+guid: 148
+---
+<p>After installing Windows 7 on your Mac, you may encounter an issue in which you can no longer mount your fancey, new Windows partition in OS X. In Disk Utility, your partition (usually disk0s3) will be ghosted (greyed out), and attempting to mount it will result in no change.</p>
+
+<h3>The Cause</h3>
+
+<p>Boot Camp assistant will create a FAT32 partition for your Windows install, however, the Windows 7 installer will note that you cannot install Windows 7 to a FAT32 partition. If you delete the Boot Camp partition and create a new one, the Windows installer will also create an 80 MB partition for system tools. This is the source of the problem.</p>
+
+<h3>The Solution</h3>
+
+<p>Simply select the FAT32 Boot Camp partition and choose &ldquo;Format&rdquo; instead of deleting the partition and creating a new one. If you&rsquo;ve already installed Windows or have let the installer create the system tools partition, you&rsquo;ll have to delete the Windows partition and the Windows system tools partition, create a new FAT32 partition in OSX, and reinstall Windows. Note that you do not have to use the Boot Camp assistant if your Mac partition has already been resized. You can simply create a new FAT32 partition in Disk Utility.</p>
+
+<p>NOTE: If you see an empty 100 MB partition in the Windows installer between your Mac and Windows partitions, this is fine. It&rsquo;s a boundary that is created when the FAT32 partition is made.</p>
+
+<h3>For Geeks</h3>
+
+<p>The issue is that GPT thinks there are three partitions: EFI, Mac, and Windows. The MBR, however, sees four: EFI, Mac, Windows system tools, and Windows. Using gptsync will not resolve this as it makes the MBR look like the GPT — not what you want; and manually mirroring the MBR in GPT does not resolve the issue either. You will need to follow the solution above.</p>

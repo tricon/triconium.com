@@ -1,0 +1,25 @@
+--- 
+layout: post
+title: Git Fetch Not Updating List of Remote Branches
+published: true
+guid: 151
+---
+<p>If this is the case, the issue is that your remote is setup as such:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>[remote &quot;origin&quot;]
+      url = url
+      fetch = +refs/heads/master:refs/remotes/origin/master</pre></div>
+</div>
+
+
+<p>and instead should be:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>[remote &quot;origin&quot;]
+      url = url
+      fetch = +refs/heads/*:refs/remotes/origin/*</pre></div>
+</div>
+
+
+<p>in order to fetch all remote branches, not just master.</p>
