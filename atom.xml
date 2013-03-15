@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Smiling is Sexy]]></title>
-  <link href="http://Tricon.github.com/triconium/atom.xml" rel="self"/>
-  <link href="http://Tricon.github.com/triconium/"/>
-  <updated>2013-03-15T03:48:59-05:00</updated>
-  <id>http://Tricon.github.com/triconium/</id>
+  <link href="http://tricon.github.com/triconium/atom.xml" rel="self"/>
+  <link href="http://tricon.github.com/triconium/"/>
+  <updated>2013-03-15T03:54:01-05:00</updated>
+  <id>http://tricon.github.com/triconium/</id>
   <author>
     <name><![CDATA[David Aaron Fendley]]></name>
     
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Be Not]]></title>
-    <link href="http://Tricon.github.com/triconium/2013/yearn/"/>
+    <title type="html"><![CDATA[Yearn]]></title>
+    <link href="http://tricon.github.com/triconium/2013/yearn/"/>
     <updated>2013-03-15T03:05:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2013/yearn</id>
+    <id>http://tricon.github.com/triconium/2013/yearn</id>
     <content type="html"><![CDATA[<p>Voices of an age of dilusion, we remain silent.
 Poets in a realm of violence, we aspire to be broken.
 Dreamers in a universe of possibility, we wish to be grounded.
@@ -27,18 +27,18 @@ Sanctity in a world lacking truth, we yearn for you.</p>
   
   <entry>
     <title type="html"><![CDATA[Mike Capps on Video Games as Art]]></title>
-    <link href="http://Tricon.github.com/triconium/2012/mike-capps-on-video-games-as-art/"/>
+    <link href="http://tricon.github.com/triconium/2012/mike-capps-on-video-games-as-art/"/>
     <updated>2012-12-05T11:04:00-06:00</updated>
-    <id>http://Tricon.github.com/triconium/2012/mike-capps-on-video-games-as-art</id>
+    <id>http://tricon.github.com/triconium/2012/mike-capps-on-video-games-as-art</id>
     <content type="html"><![CDATA[<blockquote><p>Video games are absolutely art. It&#8217;s the new expression, I think, of our times, where it combines music, cinematography, 3D art, everything together into one piece. — Mike Capps</p></blockquote>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Mike Capps Retires]]></title>
-    <link href="http://Tricon.github.com/triconium/2012/mike-capps-retires/"/>
+    <link href="http://tricon.github.com/triconium/2012/mike-capps-retires/"/>
     <updated>2012-12-05T10:57:00-06:00</updated>
-    <id>http://Tricon.github.com/triconium/2012/mike-capps-retires</id>
+    <id>http://tricon.github.com/triconium/2012/mike-capps-retires</id>
     <content type="html"><![CDATA[<p>Mike Capps of Epic Games is retiring:</p>
 
 <blockquote><p>It’s hard to believe I’m writing these words, but here goes! After 10 crazy and wonderful years, I’m handing off my current presidential duties at Epic, and transitioning into an advisory role as well as remaining on the Epic board of directors.</p></blockquote>
@@ -49,9 +49,9 @@ Sanctity in a world lacking truth, we yearn for you.</p>
   
   <entry>
     <title type="html"><![CDATA["Cosmopolis" @ the Art]]></title>
-    <link href="http://Tricon.github.com/triconium/2012/cosmopolis-at-the-art/"/>
+    <link href="http://tricon.github.com/triconium/2012/cosmopolis-at-the-art/"/>
     <updated>2012-10-05T12:20:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2012/cosmopolis-at-the-art</id>
+    <id>http://tricon.github.com/triconium/2012/cosmopolis-at-the-art</id>
     <content type="html"><![CDATA[<p>I just saw David Cronenberg&#8217;s, “Cosmopolis” at the Art theater. I am centered.</p>
 
 <p>Combined with the inspirations offered by witnessing Philippe Petit in person three times this week, I am peaceful in being… Me… Perhaps, however I feel &#8220;in the moment&#8221; is a better choice of words. I am liberated.</p>
@@ -66,18 +66,18 @@ Sanctity in a world lacking truth, we yearn for you.</p>
   
   <entry>
     <title type="html"><![CDATA[Steve Jobs on Design]]></title>
-    <link href="http://Tricon.github.com/triconium/2012/steve-jobs-on-design/"/>
+    <link href="http://tricon.github.com/triconium/2012/steve-jobs-on-design/"/>
     <updated>2012-06-25T17:07:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2012/steve-jobs-on-design</id>
+    <id>http://tricon.github.com/triconium/2012/steve-jobs-on-design</id>
     <content type="html"><![CDATA[<blockquote><p>When you’re a carpenter making a beautiful chest of drawers, you’re not going to use a piece of plywood on the back, even though it faces the wall and nobody will ever see it. You’ll know it’s there, so you’re going to use a beautiful piece of wood on the back. For you to sleep well at night, the aesthetic, the quality, has to be carried all the way through. — Steve Jobs</p></blockquote>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Technology &amp; Privacy]]></title>
-    <link href="http://Tricon.github.com/triconium/2012/technology-and-privacy/"/>
+    <link href="http://tricon.github.com/triconium/2012/technology-and-privacy/"/>
     <updated>2012-02-15T06:20:00-06:00</updated>
-    <id>http://Tricon.github.com/triconium/2012/technology-and-privacy</id>
+    <id>http://tricon.github.com/triconium/2012/technology-and-privacy</id>
     <content type="html"><![CDATA[<p><a href="http://tracks.ranea.org/post/17612437174/two-contradictory-thoughts-about-apple-and-path">Watts Martin</a>,</p>
 
 <blockquote><p>In a comment, John refers to the idea of the “allow access to the address book?” dialog box option as “security theater,” and it is—to the same degree the one for location services is. In both cases, it’s telling you something you probably should have known already (“what do you mean the Yelp app needs location services to figure out what businesses are around me?”), and none of us have any blessed idea what data any of those apps are sending back to their servers even with those dialog boxes.</p></blockquote>
@@ -92,9 +92,9 @@ Sanctity in a world lacking truth, we yearn for you.</p>
   
   <entry>
     <title type="html"><![CDATA[Every Day Is Exactly the Same]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/every-day-is-exactly-the-same/"/>
+    <link href="http://tricon.github.com/triconium/2011/every-day-is-exactly-the-same/"/>
     <updated>2011-11-27T18:08:00-06:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/every-day-is-exactly-the-same</id>
+    <id>http://tricon.github.com/triconium/2011/every-day-is-exactly-the-same</id>
     <content type="html"><![CDATA[<p>Comfort Zones are a dangerous place to lie. They deceive, they thwart. They promise consistency and predictability at the cost of high risk and high reward. Life is painful. Thinking is painful. Existing is painful. Fortunately we have been equipped with adaptation, the ability to subvert pain through constant exposure. Pressure: They say it maketh a diamond.</p>
 
 <p>We toil in the mines of data, seeking to extract a better version of ourselves; one we can sell at a higher price to the covetous and the void — one we can sell to ourselves. We are the living strata of the earth, and yet we wish nothing more than to be lifeless, inanimate objects of subjective worth. If to live is better than to be lifeless, then surely it is better to be more than ourselves, more than human. Such a thing should come at a high price. We value our time. We value our assets. We do not value ourselves. Were we to do so, we would appreciate high risk and high reward. Within our very spirits would begin a fundamental change rooted in becoming the very high price we seek.</p>
@@ -113,9 +113,9 @@ Sanctity in a world lacking truth, we yearn for you.</p>
   
   <entry>
     <title type="html"><![CDATA[eBay's TV iPad App]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/ebays-tv-ipad-app/"/>
+    <link href="http://tricon.github.com/triconium/2011/ebays-tv-ipad-app/"/>
     <updated>2011-11-22T10:54:00-06:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/ebays-tv-ipad-app</id>
+    <id>http://tricon.github.com/triconium/2011/ebays-tv-ipad-app</id>
     <content type="html"><![CDATA[<p><a href="http://techcrunch.com/2011/11/21/ebays-ipad-app-now-shows-shoppers-relevant-merchandise-for-what-they-are-watching-on-tv/?utm_source=sendgrid.com&amp;utm_medium=email&amp;utm_campaign=website">Leena Rao at TechCrunch</a>,</p>
 
 <blockquote><p>Users tap “Watch with eBay” and type in their zip code, cable provider, channel and the program they are currently watching; and using show and event-specific key word searches, the app will surface relevant merchandise from the more than 200 million listings available on the eBay marketplace.</p></blockquote>
@@ -126,9 +126,9 @@ Sanctity in a world lacking truth, we yearn for you.</p>
   
   <entry>
     <title type="html"><![CDATA[Skype 5]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/skype-5/"/>
+    <link href="http://tricon.github.com/triconium/2011/skype-5/"/>
     <updated>2011-11-17T12:38:00-06:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/skype-5</id>
+    <id>http://tricon.github.com/triconium/2011/skype-5</id>
     <content type="html"><![CDATA[<p>Every time Skype releases an update for the Mac, a glimmer of hope wells up in me. Could this be the version in which we finally get back the wonderful Skype 2.x OS X interface?</p>
 
 <p>Alas, disappointment dawns as not only are we greeted with the awful, I-would-fire-the-designers-in-a-heartbeat Skype 5 interface that, unfortunately, Windows users have had to endure for even longer than we Mac users, but the UI/UX has been made worse, cluttered with features that take away from the joy of making a simple, high-quality call over the Internet.</p>
@@ -139,10 +139,10 @@ Sanctity in a world lacking truth, we yearn for you.</p>
   
   <entry>
     <title type="html"><![CDATA[Rest in Peace, Steven Paul Jobs]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/rest-in-peace-steven-paul-jobs/"/>
+    <link href="http://tricon.github.com/triconium/2011/rest-in-peace-steven-paul-jobs/"/>
     <updated>2011-10-05T20:48:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/rest-in-peace-steven-paul-jobs</id>
-    <content type="html"><![CDATA[<p><a href="http://Tricon.github.com/triconium/images/posts/Steve_Jobs.jpg"><img src="http://Tricon.github.com/triconium/images/posts/Steve_Jobs.jpg" alt="Steve Jobs" /></a></p>
+    <id>http://tricon.github.com/triconium/2011/rest-in-peace-steven-paul-jobs</id>
+    <content type="html"><![CDATA[<p><a href="http://tricon.github.com/triconium/images/posts/Steve_Jobs.jpg"><img src="http://tricon.github.com/triconium/images/posts/Steve_Jobs.jpg" alt="Steve Jobs" /></a></p>
 
 <p>Rest in Peace, Steven Paul Jobs. You were an inspiration to many, myself included.</p>
 ]]></content>
@@ -150,18 +150,18 @@ Sanctity in a world lacking truth, we yearn for you.</p>
   
   <entry>
     <title type="html"><![CDATA[Siri]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/siri/"/>
+    <link href="http://tricon.github.com/triconium/2011/siri/"/>
     <updated>2011-10-05T20:44:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/siri</id>
+    <id>http://tricon.github.com/triconium/2011/siri</id>
     <content type="html"><![CDATA[<p>Why the name &#8220;Siri&#8221;? It&#8217;s the name of the company they bought. Here&#8217;s what I dig about the name, &#8220;Siri&#8221;, aside from the the voice technology, the icon is great: beautiful and reminiscent of Hal. Combined with the name, and the way it glows and levels as you speak, Siri feels like an actual entity.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Resolving "Expected Block to Return True Value"]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/resolving-expected-block-to-return-true-value/"/>
+    <link href="http://tricon.github.com/triconium/2011/resolving-expected-block-to-return-true-value/"/>
     <updated>2011-09-08T12:52:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/resolving-expected-block-to-return-true-value</id>
+    <id>http://tricon.github.com/triconium/2011/resolving-expected-block-to-return-true-value</id>
     <content type="html"><![CDATA[<p>Ever have this error occur when working with tests in Ruby?</p>
 
 <pre><code>Expected block to return true value
@@ -184,9 +184,9 @@ rvm install ruby-1.9.2-p290 --patch /tmp/require-performance-fix.patch -n patche
   
   <entry>
     <title type="html"><![CDATA[The Best Ideas Have to Win]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/the-best-ideas-have-to-win/"/>
+    <link href="http://tricon.github.com/triconium/2011/the-best-ideas-have-to-win/"/>
     <updated>2011-08-29T09:39:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/the-best-ideas-have-to-win</id>
+    <id>http://tricon.github.com/triconium/2011/the-best-ideas-have-to-win</id>
     <content type="html"><![CDATA[<blockquote><p>If you want to hire great people and have them stay working for you, you have to let them make a lot of decisions and you have to, you have to be run by ideas, not hierarchy. The best ideas have to win, otherwise good people don&#8217;t stay.</p></blockquote>
 
 <p>&#8220;<a href="http://thesmallwave.com/ideas-not-hierarchy-on-steve-jobs-supposedly">Ideas, Not Hierarchy: On Steve Jobs Supposedly Making All Apple Decisions</a>&#8221;, by Tom Reestman.</p>
@@ -195,9 +195,9 @@ rvm install ruby-1.9.2-p290 --patch /tmp/require-performance-fix.patch -n patche
   
   <entry>
     <title type="html"><![CDATA[HP's One-Year Plan]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/hps-one-year-plan/"/>
+    <link href="http://tricon.github.com/triconium/2011/hps-one-year-plan/"/>
     <updated>2011-08-29T09:33:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/hps-one-year-plan</id>
+    <id>http://tricon.github.com/triconium/2011/hps-one-year-plan</id>
     <content type="html"><![CDATA[<blockquote><p>Let&#8217;s say you were given a year to kill Hewlett-Packard. Here&#8217;s how you do it.</p></blockquote>
 
 <p>&#8220;<a href="http://online.wsj.com/article/SB10001424053111904787404576535211589514334.html">H-P&#8217;s One-Year Plan</a>&#8221;, by Al Lewis.</p>
@@ -206,9 +206,9 @@ rvm install ruby-1.9.2-p290 --patch /tmp/require-performance-fix.patch -n patche
   
   <entry>
     <title type="html"><![CDATA[When We Decide]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/when-we-decide/"/>
+    <link href="http://tricon.github.com/triconium/2011/when-we-decide/"/>
     <updated>2011-08-28T11:24:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/when-we-decide</id>
+    <id>http://tricon.github.com/triconium/2011/when-we-decide</id>
     <content type="html"><![CDATA[<p>I have an obsession with the past and future. I will daydream for hours about what will be, spending other hours on what once was. In some cases, these dreams lead to visions, imaginations of a hopeful future. Other times, reflections on the past only serve to provide guilt, stress, and shame.</p>
 
 <p>We must embrace the present.</p>
@@ -235,9 +235,9 @@ rvm install ruby-1.9.2-p290 --patch /tmp/require-performance-fix.patch -n patche
   
   <entry>
     <title type="html"><![CDATA[Light]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/light/"/>
+    <link href="http://tricon.github.com/triconium/2011/light/"/>
     <updated>2011-08-25T10:49:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/light</id>
+    <id>http://tricon.github.com/triconium/2011/light</id>
     <content type="html"><![CDATA[<blockquote><p>The most terrifying fact of the universe is not that it is hostile but that it is indifferent; but if we can come to terms with this indifference and accept the challenges of life within the boundaries of death — however mutable man may be able to make them — our existence as a species can have genuine meaning and fulfillment.</p>
 
 <p>However vast the darkness, we must supply our own light.</p></blockquote>
@@ -248,9 +248,9 @@ rvm install ruby-1.9.2-p290 --patch /tmp/require-performance-fix.patch -n patche
   
   <entry>
     <title type="html"><![CDATA[Legacy]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/legacy/"/>
+    <link href="http://tricon.github.com/triconium/2011/legacy/"/>
     <updated>2011-08-24T19:24:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/legacy</id>
+    <id>http://tricon.github.com/triconium/2011/legacy</id>
     <content type="html"><![CDATA[<p><a href="http://www.apple.com/pr/library/2011/08/24Letter-from-Steve-Jobs.html">Steve Jobs has stepped down as CEO of Apple Inc.</a></p>
 
 <p>It had been a dream of mine for some time to go to WWDC, to experience a keynote given by him.</p>
@@ -267,9 +267,9 @@ rvm install ruby-1.9.2-p290 --patch /tmp/require-performance-fix.patch -n patche
   
   <entry>
     <title type="html"><![CDATA[Migrating Old Rails Migrations to Timestamp Format]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/migrating-old-rails-migrations-to-timestamp-format/"/>
+    <link href="http://tricon.github.com/triconium/2011/migrating-old-rails-migrations-to-timestamp-format/"/>
     <updated>2011-08-24T15:30:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/migrating-old-rails-migrations-to-timestamp-format</id>
+    <id>http://tricon.github.com/triconium/2011/migrating-old-rails-migrations-to-timestamp-format</id>
     <content type="html"><![CDATA[<p>Enter your RAILS_ROOT/db/migrate directory and run this:</p>
 
 <div><script src='https://gist.github.com/1178583.js?file='></script>
@@ -282,10 +282,10 @@ rvm install ruby-1.9.2-p290 --patch /tmp/require-performance-fix.patch -n patche
   
   <entry>
     <title type="html"><![CDATA[There I Fixed It: TextMate]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/there-i-fixed-it-textmate/"/>
+    <link href="http://tricon.github.com/triconium/2011/there-i-fixed-it-textmate/"/>
     <updated>2011-08-24T11:11:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/there-i-fixed-it-textmate</id>
-    <content type="html"><![CDATA[<p><a href="http://Tricon.github.com/triconium/images/posts/Vico_icon_as_TextMates.png"><img src="http://Tricon.github.com/triconium/images/posts/Vico_icon_as_TextMates_preview.png" alt="Vico icon as TextMate's" /></a></p>
+    <id>http://tricon.github.com/triconium/2011/there-i-fixed-it-textmate</id>
+    <content type="html"><![CDATA[<p><a href="http://tricon.github.com/triconium/images/posts/Vico_icon_as_TextMates.png"><img src="http://tricon.github.com/triconium/images/posts/Vico_icon_as_TextMates_preview.png" alt="Vico icon as TextMate's" /></a></p>
 
 <p>Because I love Vico but don&#8217;t like its icon.</p>
 ]]></content>
@@ -293,10 +293,10 @@ rvm install ruby-1.9.2-p290 --patch /tmp/require-performance-fix.patch -n patche
   
   <entry>
     <title type="html"><![CDATA[First Pictures of Damage From the East Coast Quake]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/first-pictures-of-damage-from-the-east-coast-quake/"/>
+    <link href="http://tricon.github.com/triconium/2011/first-pictures-of-damage-from-the-east-coast-quake/"/>
     <updated>2011-08-23T13:30:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/first-pictures-of-damage-from-the-east-coast-quake</id>
-    <content type="html"><![CDATA[<p><a href="http://Tricon.github.com/triconium/images/posts/First_pictures_of_East_Coast_quake.png"><img src="http://Tricon.github.com/triconium/images/posts/First_pictures_of_East_Coast_quake_preview.png" alt="First pictures of East Coast quake" /></a></p>
+    <id>http://tricon.github.com/triconium/2011/first-pictures-of-damage-from-the-east-coast-quake</id>
+    <content type="html"><![CDATA[<p><a href="http://tricon.github.com/triconium/images/posts/First_pictures_of_East_Coast_quake.png"><img src="http://tricon.github.com/triconium/images/posts/First_pictures_of_East_Coast_quake_preview.png" alt="First pictures of East Coast quake" /></a></p>
 ]]></content>
   </entry>
   

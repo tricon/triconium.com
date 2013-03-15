@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Dave | Smiling is Sexy]]></title>
-  <link href="http://Tricon.github.com/triconium/categories/dave/atom.xml" rel="self"/>
-  <link href="http://Tricon.github.com/triconium/"/>
-  <updated>2013-03-15T03:48:59-05:00</updated>
-  <id>http://Tricon.github.com/triconium/</id>
+  <link href="http://tricon.github.com/triconium/categories/dave/atom.xml" rel="self"/>
+  <link href="http://tricon.github.com/triconium/"/>
+  <updated>2013-03-15T03:54:01-05:00</updated>
+  <id>http://tricon.github.com/triconium/</id>
   <author>
     <name><![CDATA[David Aaron Fendley]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[These Twitter Email Notifications Illicit a Genuine LOL Every Time]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/these-twitter-email-notifications-illicit-a-genuine-lol-every-time/"/>
+    <link href="http://tricon.github.com/triconium/2011/these-twitter-email-notifications-illicit-a-genuine-lol-every-time/"/>
     <updated>2011-08-01T00:00:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/these-twitter-email-notifications-illicit-a-genuine-lol-every-time</id>
+    <id>http://tricon.github.com/triconium/2011/these-twitter-email-notifications-illicit-a-genuine-lol-every-time</id>
     <content type="html"><![CDATA[<p><img src="/images/posts/Dave_HOORAY_preview.png" alt="Dave HOORAY" /></p>
 
 <p>No, @DaveWitt is not a bot&hellip; He's a BOSS.</p>
@@ -30,9 +30,9 @@
   
   <entry>
     <title type="html"><![CDATA[My Jeep Only Drives North]]></title>
-    <link href="http://Tricon.github.com/triconium/2011/my-jeep-only-drives-north/"/>
+    <link href="http://tricon.github.com/triconium/2011/my-jeep-only-drives-north/"/>
     <updated>2011-05-06T00:00:00-05:00</updated>
-    <id>http://Tricon.github.com/triconium/2011/my-jeep-only-drives-north</id>
+    <id>http://tricon.github.com/triconium/2011/my-jeep-only-drives-north</id>
     <content type="html"><![CDATA[<p><img src="/images/posts/My_Jeep_only_drives_North.png" alt="My Jeep only drives North" /></p>
 ]]></content>
   </entry>

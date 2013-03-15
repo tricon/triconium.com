@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: video | Smiling is Sexy]]></title>
-  <link href="http://Tricon.github.com/triconium/categories/video/atom.xml" rel="self"/>
-  <link href="http://Tricon.github.com/triconium/"/>
-  <updated>2013-03-15T03:48:59-05:00</updated>
-  <id>http://Tricon.github.com/triconium/</id>
+  <link href="http://tricon.github.com/triconium/categories/video/atom.xml" rel="self"/>
+  <link href="http://tricon.github.com/triconium/"/>
+  <updated>2013-03-15T03:54:01-05:00</updated>
+  <id>http://tricon.github.com/triconium/</id>
   <author>
     <name><![CDATA[David Aaron Fendley]]></name>
     
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[Mike Capps on Video Games as Art]]></title>
-    <link href="http://Tricon.github.com/triconium/2012/mike-capps-on-video-games-as-art/"/>
+    <link href="http://tricon.github.com/triconium/2012/mike-capps-on-video-games-as-art/"/>
     <updated>2012-12-05T11:04:00-06:00</updated>
-    <id>http://Tricon.github.com/triconium/2012/mike-capps-on-video-games-as-art</id>
+    <id>http://tricon.github.com/triconium/2012/mike-capps-on-video-games-as-art</id>
     <content type="html"><![CDATA[<blockquote><p>Video games are absolutely art. It's the new expression, I think, of our times, where it combines music, cinematography, 3D art, everything together into one piece. — Mike Capps</p></blockquote>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Mike Capps Retires]]></title>
-    <link href="http://Tricon.github.com/triconium/2012/mike-capps-retires/"/>
+    <link href="http://tricon.github.com/triconium/2012/mike-capps-retires/"/>
     <updated>2012-12-05T10:57:00-06:00</updated>
-    <id>http://Tricon.github.com/triconium/2012/mike-capps-retires</id>
+    <id>http://tricon.github.com/triconium/2012/mike-capps-retires</id>
     <content type="html"><![CDATA[<p>Mike Capps of Epic Games is retiring:</p>
 
 <blockquote><p>It’s hard to believe I’m writing these words, but here goes! After 10 crazy and wonderful years, I’m handing off my current presidential duties at Epic, and transitioning into an advisory role as well as remaining on the Epic board of directors.</p></blockquote>
