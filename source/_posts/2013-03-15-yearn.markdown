@@ -6,7 +6,7 @@ comments: true
 categories:
 guid: 211
 ---
-Voices of an age of dilusion, we remain silent.
-Poets in a realm of violence, we aspire to be broken.
-Dreamers in a universe of possibility, we wish to be grounded.
+Voices in an age of dilusion, we remain silent.<br/>
+Poets in a realm of violence, we aspire to be broken.<br/>
+Dreamers in a universe of possibility, we wish to be grounded.<br/>
 Sanctity in a world lacking truth, we yearn for you.
