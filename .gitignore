@@ -1,3 +1,4 @@
+bin
 .bundle
 .DS_Store
 .sass-cache
@@ -11,3 +12,6 @@ source/_stash
 source/stylesheets/screen.css
 vendor
 node_modules
+_gist_cache/
+
+.rbenv-version
